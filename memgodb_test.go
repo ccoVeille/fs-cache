@@ -116,7 +116,7 @@ func Test_Insert_FromJsonFile(t *testing.T) {
 func Test__Filter_First(t *testing.T) {
 	ch := Cache{}
 
-	// insert a new records
+	// insert a new record
 	res, err := ch.Memgodb().Collection("user").Insert(nil).Many(MemgodbTestCases)
 	if err != nil {
 		assert.Error(t, err)
@@ -166,7 +166,7 @@ func Test__Filter_First(t *testing.T) {
 func Test_Filter_All(t *testing.T) {
 	ch := Cache{}
 
-	// insert a new records
+	// insert a new record
 	res, err := ch.Memgodb().Collection("user").Insert(nil).Many(MemgodbTestCases)
 	if err != nil {
 		assert.Error(t, err)
